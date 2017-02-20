@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+          p{
+            margin: 100px;
+            background: #fcc;
+            width: 200px;
+          }
+          .wrap{
+            overflow: hidden;
+          }
+        </style>
+    </head>
+    <body>
+    <!-- 给hehe包一层wrap,设置overflow:hidden使wrap形成BFC,这样haha和hehe不属于同一个BFC
+     利用BFC的特性：属于同一个BFC的两个相邻box 垂直margin会重叠的特性（让不属于同一个BFC，则消除了margin重叠） -->
+      <p>haha</p>
+      <div class="wrap">
+        <p>hehe</p>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+          .parent{
+            background: red;
+            overflow: hidden;
+          }
+          .child{
+            width:100px;
+            height: 100px;
+            background: #aaa;
+            float: left;
+          }
+        </style>
+    </head>
+    <body>
+    <!-- 给parent设置overflow:hidden使其形成BFC, 利用BFC的特性：BFC计算高度时，浮动元素也参与计算的特性 -->
+      <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+      </div>
+    </body>
+</html>
