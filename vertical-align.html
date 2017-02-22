@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+          p{
+            padding: 0;
+            margin: 0;
+          }
+          .parent{
+            width: 400px;
+            height: 400px;
+            background: #e6e6e6;
+            margin: 0 auto;
+          }
+          .child{
+            vertical-align: middle;
+            font-size: 14px;
+          }
+          .big{
+            font-size: 34px;
+          }
+
+          .f-l{
+            float: left;
+          }
+          .clearfix:after{
+            display: block;
+            height: 0;
+            content: '';
+            clear:both;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="parent">
+        <p class="big">big young<span class="child">今天周一</span></p>
+      </div>
+       
+    </body>
+</html>

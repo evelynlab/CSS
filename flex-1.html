@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- flex: 1表示 剩余空间占比  -->
+        <meta charset="utf-8">
+        <style type="text/css">
+          ul,li{
+            list-style-type: none;
+          }
+           .f-l{
+            float: left;
+          }
+          .clearfix:after{
+            display: block;
+            height: 0;
+            content: '';
+            clear:both;
+          }
+            .p-ul{
+            width: 100%;
+            display: flex;
+          }
+          .u-li{
+            width: 300px;
+            background: #edf;
+            flex: 1;
+          }
+          .li-1{
+            flex: 2;
+          }
+        </style>
+    </head>
+    <body>
+     <ul class="p-ul clearfix">
+        <li class="u-li li-1 f-l">34</li>
+        <li class="u-li f-l">45</li>
+      </ul>
+    </body>
+</html>
