@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+        	.trapezoid {
+        		/*-webkit-box-sizing: content-box;*/
+			  /*-moz-box-sizing: content-box;*/
+			  /*box-sizing: content-box;*/
+			  width: 100px;
+			  height: 0;
+			  border: 50px solid rgba(0,0,0,0);
+			  border-bottom: 0 solid;
+			  border-top: 100px solid #1abc9c;
+			  /*font: normal 100%/normal Arial, Helvetica, sans-serif;*/
+			  /*color: rgba(0,0,0,1);*/
+			  -o-text-overflow: clip;
+			  text-overflow: clip;
+        	}
+        	.block {
+			  	width: 100px;
+			  	height: 0px;
+			  	border-width: 50px 50px 0px  0px ;
+			  	border-style: solid;
+			  	border-color: rgba(0,0,0,0.5) rgba(0,0,0,0) rgba(0,0,0,0) rgba(0,0,0,0);
+			  	margin-top: 40px;
+			  	color: red;
+			  	background: #ccc;
+			  	background-clip: content-box;
+        	}
+        	.test {
+        		background: #e84a01;
+        		border: 3px solid transparent;
+        		height: 20px;
+        		width: 20px;
+        		margin-top: 40px;
+        		/*ie8 及以下不支持*/
+        		/*background-clip: border-box;*/  
+        	}
+        </style>
+    </head>
+    <body>
+    	<h2>css画梯形</h2>
+    	<!-- 梯形 -->
+    	<div class="trapezoid">hello</div>
+    	<h2>css画直角梯形</h2>
+    	<!-- 直角梯形 -->
+    	<div class="block">hello</div>
+    	<h2>测试background-clip属性</h2>
+    	<!-- 测试background是否应用到border上面 -->
+    	<div class="test"></div>
+    </body>
+</html>
