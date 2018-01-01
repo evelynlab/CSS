@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        .block {
+            width: 400px;
+            height: 100px;
+            background-color: #eee;
+            margin-bottom: 16px;
+        }
+        .bg-block {
+            background-image: linear-gradient(180deg, #F80 70%, #2ED);
+            -webkit-text-fill-color:red;
+        }
+        .font-block {
+            font-size: 48px;
+            background: linear-gradient(to bottom,#F80, #2ED);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .border-block {
+            border: 10px solid transparent;
+            border-image: linear-gradient(to top,#F80, #2ED);
+            /* border-image: url('https://mdn.mozillademos.org/files/4127/border.png'); */
+            border-image-slice: 27;
+            /* border-image-slice: 10; */
+            border-image-repeat: repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="block bg-block">
+        背景渐变
+    </div>
+    <div class="block font-block">
+        字体渐变
+    </div>
+    <div class="block border-block">
+        边框渐变
+    </div>
+</body>
+</html>
