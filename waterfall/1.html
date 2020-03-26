@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+        .wrap {
+          column-count: 2;
+          column-gap: 10px;
+          width: 500px;
+        }
+        .card {
+          background-color: #bdbdbd;
+          margin-bottom: 10px;
+        }
+        .card-img {
+          width: 100%;
+        }
+        </style>
+    </head>
+    <body>
+      <div>可以使用CSS column-count 实现瀑布流</div>
+      <div>特点：排序是这样的：</div>
+      
+      <div>缺点：底部对齐不太好</div>
+      <div class="wrap">
+        <div class="card">
+          <img class="card-img" src="https://hbimg.huabanimg.com/e86d9a56480298508a6925539210472c13a34ab06f0c1-LvELFI_/fw/480">
+          card0
+        </div>
+        <div class="card">
+          <img class="card-img" src="https://hbimg.huabanimg.com/155d2ff87bd3df9cc4885642b8997406a3e3ba99a0a93-dTDnRg_/fw/480">
+          card1
+        </div>
+        <div class="card">card2</div>
+        <div class="card">card3</div>
+        <div class="card">card4</div>
+        <div class="card">card5
+          <img class="card-img" src="https:////hbimg.huabanimg.com/d868319304dca05b164d1934adfd2414ae2d9b4a667ea-KIsAKd_/fw/480">
+        </div>
+        <div class="card">card6</div>
+      </div>
+    </body>
+</html>
