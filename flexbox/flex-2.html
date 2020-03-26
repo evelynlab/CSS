@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <style type="text/css">
+        .wrapper {
+            display: flex;
+        }
+        .fixed-left {
+            width: 50px;
+            height: 50px;
+            background-color:purple;
+            flex-shrink: 0;
+            font-size:12px;
+        }
+        .fixed-right {
+            width: 100px;
+            height: 50px;
+            background-color: #ff6633;
+            flex-shrink: 0;
+            font-size:14px;
+        }
+        .auto-middle {
+            flex: 1;
+            padding: 0 8px;
+            display: flex;
+            width: 0;
+        }
+        .element {
+            margin-right: 4px;
+            background-color: #bdbdbd;
+            white-space: nowrap;
+        }
+        .element-1 {
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .element-2 {
+            flex: 1;
+        }
+        .webp-wrap {
+            width: 200px;
+            height: 200px;
+        }
+        .webp-test {
+            width: 100%;
+        }
+
+        .initial {
+          display: flex;
+          width: 300px;
+          background-color: #e1e1e1;
+          margin-bottom: 40px;
+        }
+        .left,.right {
+          width: 100px;
+        }
+        .middle {
+          flex: 1;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="initial">
+          <div class="left">left</div>
+            <div class="middle">middlemiddlemiddlemiddlemiddle</div>
+          <div class="right">right</div>
+        </div>
+        <div class="wrapper">
+            <div class="fixed-left">固定,不要挤压我
+            </div>
+            <div class="auto-middle">
+                <div class="element element-1">element1 content should flex</div>
+                <div class="element element-2">element2 content </div>
+            </div>
+            <div class="fixed-right">固定,不要挤压我
+            </div>
+        </div>
+        <div class="webp-wrap">
+        <img class="webp-test" src="data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAD8D+JaQAA3AA/uVqAAA=" />
+    </div>
+    </body>
+</html>

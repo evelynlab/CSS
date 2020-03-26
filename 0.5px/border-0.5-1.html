@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <style type="text/css">
+            .round{
+                position: relative;
+                font-size: 16px;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .round:after{
+                content: "";
+                position: absolute;
+                top: -50%;
+                bottom: -50%;
+                left: -50%;
+                right: -50%;
+                width: 200%;
+                height: 200%;
+                -webkit-transform: scale(0.5);
+                transform: scale(0.5);
+                border: 1px solid red;
+                border-radius: 220px;
+                box-sizing:border-box;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="round">
+              
+          </div>
+    </body>
+</html>

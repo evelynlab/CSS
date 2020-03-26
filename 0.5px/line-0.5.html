@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <style type="text/css">
+            .half-px-line-top {
+                position: relative;
+            }
+            .half-px-line-top:before {
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    background-color: red;
+                    transform: scaleY(0.5);
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                }
+            .half-px-line-bottom {
+                position: relative;
+            }
+            .half-px-line-bottom:after {
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    background-color: red;
+                    transform: scaleY(0.5);
+                    width: 100%;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+        </style>
+    </head>
+    <body>
+        <div class="half-px-line-bottom half-px-line-top ">
+            hello
+          </div>
+    </body>
+</html>
